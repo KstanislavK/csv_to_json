@@ -1,7 +1,9 @@
 import csv
 import json
+import sys
 
-csv_file = './films.csv'
+csv_file = sys.argv[1]
+
 json_file = f'{csv_file[(csv_file.rfind("/") + 1):csv_file.rfind(".")]}.json'
 csv_rows = []
 
